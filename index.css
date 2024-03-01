@@ -1,6 +1,12 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------- Header Section styling -------> */
 .header 
 {
-    /* border: 2px solid red; */
+    border-bottom: 2px solid grey;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,16 +29,37 @@
     /* border: 2px solid pink; */
     list-style: none;
     display: flex;
+    align-items: center;
     font-size: 22px;
+    
 }
 .nav-items ul li 
 {
     padding: 5px;
     margin: 13px;
+   
     &:hover{
         cursor: pointer;
     }
 }
+ a
+{
+    text-decoration: none;
+    color: black;
+}
+.login-btn
+{
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+    &:hover
+    {
+        background-color: black;
+        color: wheat;
+    }
+}
+/* --------- Search Section styling -------> */
 .search
 {
     /* border: 2px solid red; */
@@ -52,6 +79,7 @@
     height: 50px;
     width: 60vw;
     margin: 4px;
+    padding-left: 15px;
     border-radius: 1rem;
     font-size: large;
 }
@@ -99,6 +127,7 @@
         background-color: black;
     }
   }
+  /* --------- Restaurant Cards Section styling -------> */
 .res-container
 {
     /* border: 2px solid red; */
@@ -111,13 +140,20 @@
 .res-card 
 {
     /* border: 2px solid red; */
-    box-shadow: inset;
-    width: 300px;
-    /* height: 200px; */
-   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;   
     text-align: left;
     padding: 15px;
     margin: 10px;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        border: 1px solid grey;
+        border-radius: 20px;
+    }
+    transition: transform 2s;
 }
 .res-card-img
 {
@@ -131,12 +167,14 @@
 .res-card img 
 {
     width: 100%;
-    /* border-radius: 20px; */
+    height: 100%;
+    border-radius: 20px;
 }
 .res-desc 
 {
     /* border: 2px solid red; */
-    /* line-height: 0.2cm; */
+    width: 300px;
+    padding: 0px 6px 0px 6px;
     margin-top: 2px;
     margin-left: 4px;
 }
@@ -157,4 +195,135 @@
 {
     display: flex;
     justify-content: space-between;
+}
+/* --------- Restaurant's Menu Page styling -------> */
+.menu-container
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu-header
+{
+    /* border:  2px solid; */
+    border-bottom: 1px grey dashed;
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.menu-res-desc
+{
+    /* border: 2px solid red; */
+    line-height: 1;
+    padding-left: 10px;
+    width: 40%;
+    font-size: larger;
+}
+.menu-res-desc p{
+    color: grey;
+}
+.menu-res-rating
+{
+    border: 1px solid rgba(128, 128, 128, 0.207);
+    border-radius: 10px;
+    padding: 4px;
+    /* height: 8vh; */
+}
+.menu-rating-star
+{
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.207);
+    text-align: center;
+    font-size:22px;
+    font-weight: bold;
+}
+#menu-star
+{
+    margin: 2px;
+}
+.menu-rating-numbers
+{
+    height: 20px;
+}
+.menu-categories
+{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+.collapse-state-toggleBtn
+{
+    background: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    cursor: pointer;
+    display: flex;
+    font-size: medium;
+}
+#arrow-icon
+{
+    border: none;
+    height: 40px;
+    width: 40px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/827/566/non_2x/down-arrow-icon-sign-symbol-logo-vector.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+#menu-filter-btn
+{
+    border-radius: 7px;
+    height: 35px;
+    width: 70px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+   
+}
+.menu-items-container
+{
+   
+    padding-left: 12px;
+    padding-right: 15px;
+    margin: 5px;
+}
+.menu-items-card
+{
+    border-bottom: 1px solid grey;
+    padding: 10px;
+     /* width: 100%; */
+     display: flex;
+     align-items: center;
+     justify-content:space-between;
+}
+.add-item-btn
+{
+    background: none;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    color: rgba(0, 128, 0, 0.666);
+    font-size: larger;
+    font-weight: bolder;
+    padding: 4px;
+    cursor: pointer;
+}
+Link{
+    text-decoration: none;
+}
+.user-card
+{
+    border: 2px solid;
 }

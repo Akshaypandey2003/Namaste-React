@@ -52,3 +52,30 @@
    * Two Importants Hooks
      -> useState(): used to generate super powerfull state variable in REACT.
      -> useEffect()
+
+
+# Redux Toolkit
+ -Install @reduxjs/toolkit and react-redux
+ -Build our store
+ -Connect our store to our app
+ -create slice (cart slice)
+ -dispatch(Action)
+ -selector
+
+ # Types of testing (for developer)
+  - Unit Testing
+  - Integration Testing
+  - End to End Testing - e2e testing
+
+  # Setting up testing environment
+  - Install React testing lib
+  - Install Jest
+  - Install Babel dependencies which are required for Jest.
+  - Configure Babel by creating babel.config.js file 
+  - Configure Parcel Config file to disable default Babel transpilation
+    and using our own Babel config which is required in jest for testing purpose.
+  - Jest configuration using command - npx jest --init
+  - Install JSDOM lib
+  - Install @babel/preset-react to make JSX work for test cases 
+  - Include @babel/preset-react inside my babel config
+  - Install @testing-library/jest-dom

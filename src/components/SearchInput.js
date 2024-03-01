@@ -9,10 +9,15 @@ const SearchInput = () => {
 
   const [data, setData] = useState(resInfoObj);
 
+  const [searchText, updateSearchText] = useState("");
+
   return (
     <div className="search-input">
-      <input className="input" type="text" placeholder="Get your meal"></input>
-      <button className="search-btn btn">Search</button>
+      <input className="input" type="text" placeholder="Get your meal" value={searchText}></input>
+      <button className="search-btn btn" onClick={()=>{}}>Search</button>
+
+
+
       <div className="dropdown">
         <button className="dropbtn btn">Filter</button>
         <div className="dropdown-content">

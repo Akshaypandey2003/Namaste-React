@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .shimmer-search
+{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    padding: 5px;
+    margin: 8px;
+}
+.shimmer-search-input
+{
+    width: 65vw;
+    display: flex;
+    justify-content:center;
+    
+}
+.shimmer-input-box
+{
+    border: none;
+    background-color: #70656563;
+    height: 50px;
+    width: 60vw;
+    margin: 4px;
+    padding-left: 15px;
+    border-radius: 1rem;
+    font-size: large;
+}
+.shimmer-search-btn
+{
+    background-color: #70656563;
+    height: 53px;
+    width: 100px;
+    margin: 4px;
+    border-radius: 1rem;
+}
+.shimmer-search-dropdown
+{
+    background-color: #70656563;
+    height: 53px;
+    width: 100px;
+    margin: 4px;
+    border-radius: 1rem;
+}
+.shimmer-container
+{
+    border-radius: 20px;
+}
+.shimmer-card-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shimmer-res-card
+{
+    background-color: #8783837a;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+}
+.shimmer-res-card-img
+{
+    border-radius: 10px;
+    background-color: #70656563;
+    width: 350px;
+    height: 250px;
+}
+.shimmer-res-desc 
+{
+    border-radius: 8px;
+    width: 340px;
+    margin-top: 10px;
+}
+.shimmer-res-desc h3 
+{
+    background-color: #70656563;
+    width: 60%;
+    height: 15px;
+    border-radius:10px ;
+}
+.shimmer-res-desc p{
+    background-color: #70656563;
+    width: 40%;
+    height: 8px;
+    border-radius:10px ;
+}
+.shimmer-res-desc-details
+{
+    display: flex;
+    justify-content: space-between;
+}
+#shimmer-res-rating
+{
+    border-radius: 5px;
+    background-color: #70656563;
+    width: 50px;
+    height: 20px;
+    
+}
+#shimmer-res-time
+{
+    border-radius: 8px;
+    background-color: #70656563;
+    width: 70px;
+    
+}
+#shimmer-res-availability
+{
+    border-radius: 8px;
+    background-color: #70656563;
+    width: 80px;
+}
+ */
